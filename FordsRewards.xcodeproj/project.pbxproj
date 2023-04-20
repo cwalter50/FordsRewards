@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GavinsScheduleView.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
 				38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */,
 				38C6080529F1906F0027A5D1 /* Preview Content */,
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,
 			);

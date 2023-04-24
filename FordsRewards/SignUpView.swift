@@ -67,6 +67,6 @@ struct SignUpView_Previews: PreviewProvider {
         NavigationView {
             SignUpView()
         }.navigationTitle("Sign Up View")
-            .toolbarBackground(Color.fordsLightYellow, for: .automatic)
+            .environmentObject(dev.authVM)
     }
 }

@@ -21,7 +21,7 @@ struct MainView: View {
                     Text("Sign Out") .bold()
                 })
             }
-        }
+        }.navigationTitle("Main View")
     }
 }
 

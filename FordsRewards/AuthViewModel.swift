@@ -7,8 +7,11 @@
 
 import Foundation
 import FirebaseAuth
+import SwiftUI
 
 final class AuthViewModel: ObservableObject {
+    @Published var alertBool: Bool = false
+    @Published var errorMessage: String = ""
     var user: User? {
         didSet {
             objectWillChange.send()
@@ -30,6 +33,8 @@ final class AuthViewModel: ObservableObject {
     ) {
         Auth.auth().createUser(withEmail: emailAddress, password: password) { result, error in
             if let error = error {
+                self.alertCheck()
+                self.errorMessage = "\(error.localizedDescription)"
                 print("An Error Occured: \(error.localizedDescription)")
                 return
             }
@@ -42,10 +47,17 @@ final class AuthViewModel: ObservableObject {
     ){
         Auth.auth().signIn(withEmail: emailAdress, password: password) { result, error in
             if let error = error {
+                self.alertCheck()
+                self.errorMessage = "\(error.localizedDescription)"
                 print("An Error Occured: \(error.localizedDescription)")
                 return
             }
         }
+    }
+    
+    func alertCheck()
+    {
+        alertBool.toggle()
     }
     
     func signOut() {

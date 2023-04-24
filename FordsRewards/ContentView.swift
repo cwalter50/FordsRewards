@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject private var authModel: AuthViewModel
     
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color.fordsGold)]
+    }
+    
     var body: some View {
         VStack {
             Group {

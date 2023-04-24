@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */; };
 		2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119B29F19A7700B41A95 /* AuthViewModel.swift */; };
 		2571119E29F1A74B00B41A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119D29F1A74B00B41A95 /* MainView.swift */; };
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
-		257111A229F2E0EB00B41A95 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111A129F2E0EB00B41A95 /* SignInView.swift */; };
-		102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */; };
+		257111A629F2FFF500B41A95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111A529F2FFF500B41A95 /* LoginView.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -48,11 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GavinsScheduleView.swift; sourceTree = "<group>"; };
 		2571119B29F19A7700B41A95 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2571119D29F1A74B00B41A95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2571119F29F1A75D00B41A95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		257111A129F2E0EB00B41A95 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GavinsScheduleView.swift; sourceTree = "<group>"; };
+		257111A529F2FFF500B41A95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
-				257111A129F2E0EB00B41A95 /* SignInView.swift */,
+				257111A529F2FFF500B41A95 /* LoginView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
 				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
@@ -303,9 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257111A229F2E0EB00B41A95 /* SignInView.swift in Sources */,
 				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
+				257111A629F2FFF500B41A95 /* LoginView.swift in Sources */,
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,

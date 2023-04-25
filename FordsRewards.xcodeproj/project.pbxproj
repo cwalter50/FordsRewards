@@ -29,6 +29,7 @@
 		38C6083529F191F10027A5D1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083429F191F10027A5D1 /* FirebaseFunctions */; };
 		38C6083729F191F10027A5D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083629F191F10027A5D1 /* FirebaseStorage */; };
 		4D92370029F2E71E008E4F82 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9236FF29F2E71E008E4F82 /* Color.swift */; };
+		4D92370829F83346008E4F82 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92370729F83346008E4F82 /* EventView.swift */; };
 		DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84029F6D8CF00FA848E /* ProfileView.swift */; };
 		DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84229F6D8E600FA848E /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		38C6081C29F1906F0027A5D1 /* FordsRewardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D9236FF29F2E71E008E4F82 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4D92370729F83346008E4F82 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		DEF6E84029F6D8CF00FA848E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DEF6E84229F6D8E600FA848E /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
 				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
+				4D92370729F83346008E4F82 /* EventView.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
 				4D9236FF29F2E71E008E4F82 /* Color.swift */,
 				38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */,
@@ -315,6 +318,7 @@
 				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
+				4D92370829F83346008E4F82 /* EventView.swift in Sources */,
 				DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */,
 				257111A629F2FFF500B41A95 /* LoginView.swift in Sources */,
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,

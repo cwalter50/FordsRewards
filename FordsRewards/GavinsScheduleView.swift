@@ -7,111 +7,53 @@
 
 import SwiftUI
 
-struct GavinsScheduleView: View {
-    var body: some View {
-        VStack {
-            
-            Text("FORDS SCHEDULE")
-                .font(.custom(
-                        "AmericanTypewriter",
-                        fixedSize: 36))
-                .foregroundColor(.red)
-            
-            HStack{
-                
-Button("September") {
+struct GavinsScheduleView: View
+{
+    @EnvironmentObject var dateHolder: DateHolder
     
+    
+    var body: some View
+    {
+        VStack(spacing: 1){
+            
+            DateScrollerView()
+                .padding()
+            dayOfWeekStack
+          
+            
         }
-                
-                
-        Button("October") {
-                    
-        }
-                
-                Button("November") {
-                    
-                }
-                
-                    Button("December") {
-                    
-                    }
-                
-            }
-            .frame(minWidth: 400, maxHeight: 1000)
-            .font(.system(size: 20))
-                
-            HStack{
-                Text("H")
-                
-                    .font(.system(size: 100))
-                    .padding()
-                    .background(.red)
-                        .foregroundColor(.yellow)
+    }
+    
+    var dayOfWeekStack: some View
+    {
+        HStack(spacing: 1)
+        {
+            Text("Sun").dayOfWeek()
+            Text("Mon").dayOfWeek()
+            Text("Tue").dayOfWeek()
+            Text("Wed").dayOfWeek()
+            Text("Thur").dayOfWeek()
+            Text("Fri").dayOfWeek()
+            Text("Sat").dayOfWeek()
 
-                VStack{
-                    
-                    Color.red
-                        .frame(width: 1000, height: 10)
-                        
-                    
-                    Color.yellow
-                        .frame(width: 1000, height: 10)
-                        
-                    
-                }
-                    
-                    
-                    Text("Pride")
-                    .font(.system(size: 100))
-                    .background(.red)
-                        .foregroundColor(.yellow)
 
-                
-                
-            }
-           
-            
-            HStack{
-                
-    Button("January") {
-                        
         }
-                
-        Button("February") {
-                    
-        }
-                
-            Button("March") {
-                    
-            }
-                
-                Button("April") {
-                    
-                }
-                
-                    Button("May") {
-                    
-                    }
-                
-                        Button("June") {
-                    
-                            }
-                
-            }
-            .frame(minWidth: 400, maxHeight: 1000)
-            .font(.system(size: 20))
-            .padding()
-            
-            
-            
-        }
-        .padding()
     }
 }
+    
+    
+    struct GavinsScheduleView_Previews: PreviewProvider {
+        static var previews: some View {
+            GavinsScheduleView()
+                .environmentObject(DateHolder())
+        }
+    }
 
-struct GavinsScheduleView_Previews: PreviewProvider {
-    static var previews: some View {
-        GavinsScheduleView()
+extension Text{
+    func dayOfWeek() -> some View
+    {
+        self.frame(maxWidth: .infinity)
+            .padding(.top, 1)
+            .lineLimit(1)
     }
 }
-

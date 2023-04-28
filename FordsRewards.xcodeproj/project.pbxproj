@@ -100,6 +100,11 @@
 		10F67D6F29FC236B0096FC33 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */,
+				1097815929F2E59700C2E819 /* CalendarHelper.swift */,
+				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
+				1097815329F2E1A100C2E819 /* DateHolder.swift */,
+				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
 				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
 			);
 			path = Calendar;
@@ -131,11 +136,6 @@
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
 				10F67D6F29FC236B0096FC33 /* Calendar */,
-				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
-				10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */,
-				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
-				1097815929F2E59700C2E819 /* CalendarHelper.swift */,
-				1097815329F2E1A100C2E819 /* DateHolder.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
 				38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */,
 				38C6080529F1906F0027A5D1 /* Preview Content */,

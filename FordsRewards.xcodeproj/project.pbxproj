@@ -11,6 +11,8 @@
 		1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815329F2E1A100C2E819 /* DateHolder.swift */; };
 		1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815529F2E22F00C2E819 /* DateScrollerView.swift */; };
 		1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815929F2E59700C2E819 /* CalendarHelper.swift */; };
+		10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6929FC19EC0096FC33 /* CalendarCell.swift */; };
+		10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		1097815329F2E1A100C2E819 /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
 		1097815529F2E22F00C2E819 /* DateScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollerView.swift; sourceTree = "<group>"; };
 		1097815929F2E59700C2E819 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		10F67D6929FC19EC0096FC33 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F67D6F29FC236B0096FC33 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		38C607F329F1906C0027A5D1 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +130,9 @@
 			children = (
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
-				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
+				10F67D6F29FC236B0096FC33 /* Calendar */,
+				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
+				10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */,
 				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
 				1097815929F2E59700C2E819 /* CalendarHelper.swift */,
 				1097815329F2E1A100C2E819 /* DateHolder.swift */,
@@ -298,11 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
+				10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */,
 				1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */,
 				1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */,
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,
 				1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */,
+				10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

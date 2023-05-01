@@ -27,6 +27,7 @@ struct FordsRewardsApp: App {
         ContentView()
       }
       .environmentObject(AuthViewModel())
+      .environmentObject(DateHolder())
 
     }
   }

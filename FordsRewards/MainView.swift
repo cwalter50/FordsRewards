@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject private var authModel: AuthViewModel
+    @EnvironmentObject var dateHolder: DateHolder
+
 
     var body: some View {
 
@@ -38,6 +40,7 @@ struct MainView_Previews: PreviewProvider {
         NavigationView{
             MainView()
                 .environmentObject(dev.authVM)
+                .environmentObject(DateHolder())
         }
     }
 }

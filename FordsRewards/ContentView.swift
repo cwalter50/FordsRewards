@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var authModel: AuthViewModel
     
-    @EnvironmentObject var dateHolder: DateHolder
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color.fordsGold)]
+    }
+    
     var body: some View {
         VStack {
-            
-GavinsScheduleView()
-        
+            Group {
+            if authModel.user != nil {
+                MainView()
+            } else {
+                SignUpView()
+                    .environmentObject(AuthViewModel())
+            }
+            }.onAppear {
+            authModel.listenToAuthState()
+            }
         }
-        
-        .padding()
     }
 }
 
@@ -25,5 +34,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(DateHolder())
+            .environmentObject(dev.authVM)
     }
 }

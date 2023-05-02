@@ -29,4 +29,5 @@ extension Color
     static var fordsTeal = Color("fordsTeal")
     static var fordsWhite = Color("fordsWhite")
     static var fordsYellow = Color("fordsYellow")
+    static var fordsLightYellowPlaceholder = Color("fordsLightYellowPlaceholder")
 }

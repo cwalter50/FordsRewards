@@ -8,10 +8,16 @@
 import Foundation
 import FirebaseAuth
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
-final class AuthViewModel: ObservableObject {
+class AuthViewModel: ObservableObject {
+    
     @Published var alertBool: Bool = false
     @Published var errorMessage: String = ""
+    @State var signedIn = false
+
+
     var user: User? {
         didSet {
             objectWillChange.send()
@@ -55,11 +61,6 @@ final class AuthViewModel: ObservableObject {
         }
     }
     
-    func alertCheck()
-    {
-        alertBool.toggle()
-    }
-    
     func signOut() {
         do {
             try Auth.auth().signOut()
@@ -67,4 +68,11 @@ final class AuthViewModel: ObservableObject {
             print("Error signing out: %@", signOutError)
         }
     }
+    
+    func alertCheck()
+    {
+        alertBool.toggle()
+    }
+    
+    
 }

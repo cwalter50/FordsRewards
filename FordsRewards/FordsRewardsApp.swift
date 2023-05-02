@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
+import GoogleSignIn
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -18,8 +19,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct FordsRewardsApp: App {
+    @StateObject var viewModel = AuthViewModel()
   // register app delegate for Firebase setup
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
 
   var body: some Scene {
     WindowGroup {
@@ -28,6 +31,10 @@ struct FordsRewardsApp: App {
       }
       .environmentObject(AuthViewModel())
       .environmentObject(DateHolder())
+        NavigationView {
+            ContentView()
+        }
+      .environmentObject(viewModel)
 
     }
   }

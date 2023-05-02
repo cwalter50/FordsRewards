@@ -13,37 +13,77 @@ struct LoginView: View {
     @State private var password: String = ""
 
     var body: some View {
-        Form
+        ZStack
         {
-            Section
+            Form
             {
-                TextField("Email", text: $emailAddress)
-                    .textContentType(.emailAddress)
-                    .textInputAutocapitalization(.never)
-                    .disableAutocorrection(true)
-                    .keyboardType(.emailAddress)
-                SecureField("Password", text: $password)
-                    .textContentType(.password)
-                    .keyboardType(.default)
-            }
-            
-            Section
-            {
-                Button( action: {
-                    authModel.signIn(emailAdress: emailAddress, password: password) },
-                        label: {
-                    Text("Login")
-                        .foregroundColor(Color.fordsOrange)
-                        .bold()
-                })
-            }
-        }.navigationTitle("Login")
-            .scrollContentBackground(.hidden)
-            .background(Color.fordsLightRed)
-            .alert(isPresented: $authModel.alertBool) {
-                Alert(title: Text("An Error Occured"), message: Text(authModel.errorMessage), dismissButton: .default(Text("Got it!")))
+                Section
+                {
+                    HStack
+                    {
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(Color.fordsLightYellow)
+                        
+                        SuperTextField(
+                            placeholder: Text("Email").foregroundColor(Color.fordsLightYellowPlaceholder),
+                            text: $emailAddress
+                        ).foregroundColor(Color.fordsLightYellow)
+                            .textContentType(.emailAddress)
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .keyboardType(.emailAddress)
                     }
-
+                    HStack
+                    {
+                        Image(systemName: "lock.fill")
+                            .foregroundColor(Color.fordsLightYellow)
+                        
+                        SuperTextFieldSecure(
+                            placeholder: Text("Password").foregroundColor(Color.fordsLightYellowPlaceholder),
+                            text: $password
+                        ).foregroundColor(Color.fordsLightYellow)
+                            .textContentType(.password)
+                            .keyboardType(.default)
+                    }
+                }.listRowBackground(Color.fordsRed)
+                
+                Section
+                {
+                    HStack
+                    {
+                        Spacer()
+                        Button( action: {
+                            authModel.signIn(emailAdress: emailAddress, password: password)
+                        },
+                                label: {
+                            Text("Sign In")
+                                .foregroundColor(Color.fordsYellow)
+                                .bold()
+                        })
+                        Spacer()
+                    }
+                }.listRowBackground(Color.fordsRed)
+                
+                
+                Section
+                {
+                    GoogleSignInButton(action: {
+                        print("Hello")
+                    }, signInView: true)
+                }
+            }.navigationTitle("Login")
+                .scrollContentBackground(.hidden)
+                .background(Color.fordsLightRed)
+                .shadow(color: Color.fordsSelectedButtonRed, radius: 2.5, x: 5, y: 5)
+                .alert(isPresented: $authModel.alertBool) {
+                    Alert(title: Text("An Error Occured"), message: Text(authModel.errorMessage), dismissButton: .default(Text("Got it!")))
+                }
+            NavigationLink {
+                SignUpView()
+            } label: {
+                Text("Not a Member Yet? Sign Up!")
+            }
+        }
     }
 }
 

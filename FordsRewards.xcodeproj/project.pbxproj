@@ -18,6 +18,9 @@
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
 		257111A629F2FFF500B41A95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111A529F2FFF500B41A95 /* LoginView.swift */; };
 		257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111A929F6D29C00B41A95 /* PreviewProvider.swift */; };
+		257111AE29F6E16100B41A95 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 257111AD29F6E16100B41A95 /* GoogleSignIn */; };
+		257111B029F6E16100B41A95 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 257111AF29F6E16100B41A95 /* GoogleSignInSwift */; };
+		257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B129F6F33800B41A95 /* GoogleSignInButton.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -33,6 +36,7 @@
 		38C6083329F191F10027A5D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083229F191F10027A5D1 /* FirebaseFirestore */; };
 		38C6083529F191F10027A5D1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083429F191F10027A5D1 /* FirebaseFunctions */; };
 		38C6083729F191F10027A5D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083629F191F10027A5D1 /* FirebaseStorage */; };
+		4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D58D3532A016B81002F2243 /* QRcodeView.swift */; };
 		4D92370029F2E71E008E4F82 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9236FF29F2E71E008E4F82 /* Color.swift */; };
 		4D92370829F83346008E4F82 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92370729F83346008E4F82 /* EventView.swift */; };
 		C905EFA029F982BD006E800D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905EF9F29F982BD006E800D /* HomeView.swift */; };
@@ -71,6 +75,8 @@
 		2571119F29F1A75D00B41A95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		257111A529F2FFF500B41A95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		257111A929F6D29C00B41A95 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		257111AB29F6DE8000B41A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		257111B129F6F33800B41A95 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		38C6081A29F1906F0027A5D1 /* FordsRewardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsUITests.swift; sourceTree = "<group>"; };
 		38C6081C29F1906F0027A5D1 /* FordsRewardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D58D3532A016B81002F2243 /* QRcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeView.swift; sourceTree = "<group>"; };
 		4D9236FF29F2E71E008E4F82 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4D92370729F83346008E4F82 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		C905EF9F29F982BD006E800D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -98,9 +105,11 @@
 			files = (
 				38C6082F29F191F10027A5D1 /* FirebaseAnalytics in Frameworks */,
 				38C6083129F191F10027A5D1 /* FirebaseAuth in Frameworks */,
+				257111B029F6E16100B41A95 /* GoogleSignInSwift in Frameworks */,
 				38C6083329F191F10027A5D1 /* FirebaseFirestore in Frameworks */,
 				38C6083729F191F10027A5D1 /* FirebaseStorage in Frameworks */,
 				38C6083529F191F10027A5D1 /* FirebaseFunctions in Frameworks */,
+				257111AE29F6E16100B41A95 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,17 +166,20 @@
 		38C607FE29F1906D0027A5D1 /* FordsRewards */ = {
 			isa = PBXGroup;
 			children = (
+				257111AB29F6DE8000B41A95 /* Info.plist */,
 				2571119B29F19A7700B41A95 /* AuthViewModel.swift */,
 				C905EFA129FC1ED1006E800D /* UserInfo.swift */,
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				257111A929F6D29C00B41A95 /* PreviewProvider.swift */,
-				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
-				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
+				257111B129F6F33800B41A95 /* GoogleSignInButton.swift */,
 				10F67D6F29FC236B0096FC33 /* Calendar */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
+				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
+				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
 				C905EF9F29F982BD006E800D /* HomeView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
 				4D92370729F83346008E4F82 /* EventView.swift */,
@@ -226,6 +238,8 @@
 				38C6083229F191F10027A5D1 /* FirebaseFirestore */,
 				38C6083429F191F10027A5D1 /* FirebaseFunctions */,
 				38C6083629F191F10027A5D1 /* FirebaseStorage */,
+				257111AD29F6E16100B41A95 /* GoogleSignIn */,
+				257111AF29F6E16100B41A95 /* GoogleSignInSwift */,
 			);
 			productName = FordsRewards;
 			productReference = 38C607FC29F1906D0027A5D1 /* FordsRewards.app */;
@@ -301,6 +315,7 @@
 			mainGroup = 38C607F329F1906C0027A5D1;
 			packageReferences = (
 				38C6082D29F191F10027A5D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 38C607FD29F1906D0027A5D1 /* Products */;
 			projectDirPath = "";
@@ -348,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C905EFA429FC2131006E800D /* EventInfo.swift in Sources */,
-				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
 				10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */,
 				1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */,
 				1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */,
@@ -357,6 +371,7 @@
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
 				4D92370829F83346008E4F82 /* EventView.swift in Sources */,
 				DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */,
+				257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */,
 				257111A629F2FFF500B41A95 /* LoginView.swift in Sources */,
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,
@@ -367,6 +382,7 @@
 				10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */,
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
+				4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +545,7 @@
 				DEVELOPMENT_TEAM = DNJ75V34FZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FordsRewards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +575,7 @@
 				DEVELOPMENT_TEAM = DNJ75V34FZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FordsRewards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -694,6 +712,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		38C6082D29F191F10027A5D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -705,6 +731,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		257111AD29F6E16100B41A95 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		257111AF29F6E16100B41A95 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		38C6082E29F191F10027A5D1 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 38C6082D29F191F10027A5D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

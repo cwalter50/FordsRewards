@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */; };
+		1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815329F2E1A100C2E819 /* DateHolder.swift */; };
+		1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815529F2E22F00C2E819 /* DateScrollerView.swift */; };
+		1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815929F2E59700C2E819 /* CalendarHelper.swift */; };
+		10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6929FC19EC0096FC33 /* CalendarCell.swift */; };
+		10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */; };
+		10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */; };
 		2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119B29F19A7700B41A95 /* AuthViewModel.swift */; };
 		2571119E29F1A74B00B41A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119D29F1A74B00B41A95 /* MainView.swift */; };
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
@@ -55,7 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GavinsScheduleView.swift; sourceTree = "<group>"; };
+		1097815329F2E1A100C2E819 /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
+		1097815529F2E22F00C2E819 /* DateScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollerView.swift; sourceTree = "<group>"; };
+		1097815929F2E59700C2E819 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		10F67D6929FC19EC0096FC33 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
+		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GavinsScheduleView.swift; path = ../../GavinsScheduleView.swift; sourceTree = "<group>"; };
 		2571119B29F19A7700B41A95 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2571119D29F1A74B00B41A95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2571119F29F1A75D00B41A95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -111,6 +121,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F67D6F29FC236B0096FC33 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */,
+				10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */,
+				1097815929F2E59700C2E819 /* CalendarHelper.swift */,
+				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
+				1097815329F2E1A100C2E819 /* DateHolder.swift */,
+				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		38C607F329F1906C0027A5D1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +165,11 @@
 				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
 				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				10F67D6F29FC236B0096FC33 /* Calendar */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
 				C905EF9F29F982BD006E800D /* HomeView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
-				102ADB5D29F197BF00E3F204 /* GavinsScheduleView.swift */,
 				4D92370729F83346008E4F82 /* EventView.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
 				4D9236FF29F2E71E008E4F82 /* Color.swift */,
@@ -326,6 +349,9 @@
 			files = (
 				C905EFA429FC2131006E800D /* EventInfo.swift in Sources */,
 				102ADB5E29F197BF00E3F204 /* GavinsScheduleView.swift in Sources */,
+				10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */,
+				1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */,
+				1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */,
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				C905EFA029F982BD006E800D /* HomeView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
@@ -335,7 +361,10 @@
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,
+				1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */,
+				10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */,
 				2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */,
+				10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */,
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,

@@ -11,22 +11,33 @@ struct MainView: View {
     @EnvironmentObject private var authModel: AuthViewModel
 
     var body: some View {
-        VStack {
-            Text("\(authModel.user?.email ?? "")")
-            }.toolbar
-        {
-            ToolbarItemGroup(placement: .navigationBarLeading) { Button(
-                    action: { authModel.signOut()
-                    }, label: {
-                    Text("Sign Out") .bold()
-                })
+
+        TabView{
+            HomeView()
+                .tabItem{
+                Label("Home", systemImage: "house.fill")
             }
-        }.navigationTitle("Main View")
+            
+            GavinsScheduleView()
+                .tabItem{
+                Label("Schedule", systemImage: "calendar")
+            }
+        
+            ProfileView()
+                .tabItem{
+                Label("Profile", systemImage: "person.fill")
+            }
+            
+        }
+        
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        NavigationView{
+            MainView()
+                .environmentObject(dev.authVM)
+        }
     }
 }

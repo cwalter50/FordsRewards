@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
 
 extension PreviewProvider
 {
@@ -23,4 +24,5 @@ class DeveloperPreview
     private init() {}
     
     let authVM = AuthViewModel()
+    
 }

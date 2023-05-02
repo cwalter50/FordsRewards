@@ -12,7 +12,8 @@ struct HomeView: View {
     var body: some View {
         VStack {
                     Text("\(authModel.user?.email ?? "")")
-                    }.toolbar
+        }
+        .toolbar
                 {
                     ToolbarItemGroup(placement: .navigationBarLeading) { Button(
                             action: { authModel.signOut()
@@ -20,7 +21,8 @@ struct HomeView: View {
                             Text("Sign Out") .bold()
                         })
                     }
-                }.navigationTitle("Main View")
+                }
+                .navigationTitle("Home")
         
     }
 }

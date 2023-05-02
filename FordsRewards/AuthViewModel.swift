@@ -24,6 +24,7 @@ final class AuthViewModel: ObservableObject {
                 return
             }
             self.user = user
+            
         }
     }
     

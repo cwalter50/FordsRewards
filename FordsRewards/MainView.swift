@@ -23,6 +23,10 @@ struct MainView: View {
                 Label("Schedule", systemImage: "calendar")
             }
         
+            ProfileView()
+                .tabItem{
+                Label("Profile", systemImage: "person.fill")
+            }
             
         }
         

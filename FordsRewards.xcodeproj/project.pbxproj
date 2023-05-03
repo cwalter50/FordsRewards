@@ -21,8 +21,8 @@
 		257111AE29F6E16100B41A95 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 257111AD29F6E16100B41A95 /* GoogleSignIn */; };
 		257111B029F6E16100B41A95 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 257111AF29F6E16100B41A95 /* GoogleSignInSwift */; };
 		257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B129F6F33800B41A95 /* GoogleSignInButton.swift */; };
-		257111B82A02B61300B41A95 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B72A02B61300B41A95 /* FirebaseViewModel.swift */; };
 		257111BA2A02B89900B41A95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B92A02B89900B41A95 /* HomeView.swift */; };
+		257111BC2A02BED900B41A95 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111BB2A02BED900B41A95 /* FirebaseViewModel.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -77,8 +77,8 @@
 		257111A929F6D29C00B41A95 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		257111AB29F6DE8000B41A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		257111B129F6F33800B41A95 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
-		257111B72A02B61300B41A95 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		257111B92A02B89900B41A95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		257111BB2A02BED900B41A95 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			children = (
 				257111AB29F6DE8000B41A95 /* Info.plist */,
 				2571119B29F19A7700B41A95 /* AuthViewModel.swift */,
-				257111B72A02B61300B41A95 /* FirebaseViewModel.swift */,
+				257111BB2A02BED900B41A95 /* FirebaseViewModel.swift */,
 				C905EFA129FC1ED1006E800D /* UserInfo.swift */,
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
@@ -369,6 +369,7 @@
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				257111BA2A02B89900B41A95 /* HomeView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
+				257111BC2A02BED900B41A95 /* FirebaseViewModel.swift in Sources */,
 				4D92370829F83346008E4F82 /* EventView.swift in Sources */,
 				DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */,
 				257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */,
@@ -383,7 +384,6 @@
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,
-				257111B82A02B61300B41A95 /* FirebaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

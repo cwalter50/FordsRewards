@@ -15,7 +15,7 @@ class AuthViewModel: ObservableObject {
     
     @Published var alertBool: Bool = false
     @Published var errorMessage: String = ""
-    @State var signedIn = false
+    @Published var signedIn = false
 
 
     var user: User? {
@@ -45,6 +45,10 @@ class AuthViewModel: ObservableObject {
                 print("An Error Occured: \(error.localizedDescription)")
                 return
             }
+            let newUser = UserInfo(firstName: "Mike", lastName: "Doc", points: 0, email: emailAddress, id: "Null")
+            let firebaseViewModel = FirebaseViewModel()
+            firebaseViewModel.saveUserToFirebase(userInfo: newUser)
+            
         }
     }
     

@@ -28,6 +28,6 @@ class UserInfo : ObservableObject, Identifiable
     }
     
     func toDictionaryValues() -> [String : Any] {
-        return ["id" : self.id, "firstName" : self.firstName, "lastName" : self.lastName, "points" : self.points, "email" : self.email, "id" : self.id, "created" : self.created]
+        return ["id" : self.id, "firstName" : self.firstName, "lastName" : self.lastName, "points" : self.points, "email" : self.email, "created" : self.created]
     }
 }

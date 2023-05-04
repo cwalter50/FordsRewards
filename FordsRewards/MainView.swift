@@ -47,6 +47,7 @@ struct MainView_Previews: PreviewProvider {
         NavigationView{
             MainView()
                 .environmentObject(dev.authVM)
+                .environmentObject(DateHolder())
         }
     }
 }

@@ -38,6 +38,7 @@
 		38C6083329F191F10027A5D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083229F191F10027A5D1 /* FirebaseFirestore */; };
 		38C6083529F191F10027A5D1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083429F191F10027A5D1 /* FirebaseFunctions */; };
 		38C6083729F191F10027A5D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6083629F191F10027A5D1 /* FirebaseStorage */; };
+		4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D58D3532A016B81002F2243 /* QRcodeView.swift */; };
 		4D92370029F2E71E008E4F82 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9236FF29F2E71E008E4F82 /* Color.swift */; };
 		4D92370829F83346008E4F82 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92370729F83346008E4F82 /* EventView.swift */; };
 		C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905EFA129FC1ED1006E800D /* UserInfo.swift */; };
@@ -90,6 +91,7 @@
 		38C6081A29F1906F0027A5D1 /* FordsRewardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsUITests.swift; sourceTree = "<group>"; };
 		38C6081C29F1906F0027A5D1 /* FordsRewardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38C6082929F190AC0027A5D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D58D3532A016B81002F2243 /* QRcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeView.swift; sourceTree = "<group>"; };
 		4D9236FF29F2E71E008E4F82 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4D92370729F83346008E4F82 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		C905EFA129FC1ED1006E800D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				257111A929F6D29C00B41A95 /* PreviewProvider.swift */,
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				257111B129F6F33800B41A95 /* GoogleSignInButton.swift */,
 				10F67D6F29FC236B0096FC33 /* Calendar */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
@@ -383,6 +386,7 @@
 				10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */,
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
+				4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

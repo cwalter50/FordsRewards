@@ -13,6 +13,7 @@
 		10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6929FC19EC0096FC33 /* CalendarCell.swift */; };
 		10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */; };
 		10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */; };
+		25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */; };
 		2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119B29F19A7700B41A95 /* AuthViewModel.swift */; };
 		2571119E29F1A74B00B41A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119D29F1A74B00B41A95 /* MainView.swift */; };
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
@@ -22,7 +23,6 @@
 		257111B029F6E16100B41A95 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 257111AF29F6E16100B41A95 /* GoogleSignInSwift */; };
 		257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B129F6F33800B41A95 /* GoogleSignInButton.swift */; };
 		257111BA2A02B89900B41A95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111B92A02B89900B41A95 /* HomeView.swift */; };
-		257111BE2A02C03D00B41A95 /* FireBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257111BD2A02C03D00B41A95 /* FireBaseViewModel.swift */; };
 		38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */; };
 		38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6080129F1906D0027A5D1 /* ContentView.swift */; };
 		38C6080429F1906F0027A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C6080329F1906F0027A5D1 /* Assets.xcassets */; };
@@ -70,6 +70,7 @@
 		10F67D6929FC19EC0096FC33 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
 		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GavinsScheduleView.swift; path = ../../GavinsScheduleView.swift; sourceTree = "<group>"; };
+		25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		2571119B29F19A7700B41A95 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2571119D29F1A74B00B41A95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2571119F29F1A75D00B41A95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		257111AB29F6DE8000B41A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		257111B129F6F33800B41A95 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		257111B92A02B89900B41A95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		257111BD2A02C03D00B41A95 /* FireBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseViewModel.swift; sourceTree = "<group>"; };
 		38C607FC29F1906D0027A5D1 /* FordsRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordsRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordsRewardsApp.swift; sourceTree = "<group>"; };
 		38C6080129F1906D0027A5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			children = (
 				257111AB29F6DE8000B41A95 /* Info.plist */,
 				2571119B29F19A7700B41A95 /* AuthViewModel.swift */,
-				257111BD2A02C03D00B41A95 /* FireBaseViewModel.swift */,
+				25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */,
 				C905EFA129FC1ED1006E800D /* UserInfo.swift */,
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
@@ -369,10 +369,10 @@
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				257111BA2A02B89900B41A95 /* HomeView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
+				25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */,
 				4D92370829F83346008E4F82 /* EventView.swift in Sources */,
 				DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */,
 				257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */,
-				257111BE2A02C03D00B41A95 /* FireBaseViewModel.swift in Sources */,
 				257111A629F2FFF500B41A95 /* LoginView.swift in Sources */,
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,

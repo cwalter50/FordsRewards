@@ -11,6 +11,8 @@ struct SignUpView: View {
     @EnvironmentObject private var authModel: AuthViewModel
     @State private var emailAddress: String = ""
     @State private var password: String = ""
+    @State private var firstName: String = ""
+    @State private var lastName: String = ""
 
     init()
     {
@@ -24,6 +26,7 @@ struct SignUpView: View {
             {
                 Section
                 {
+                    //Email Textfield
                     HStack
                     {
                         Image(systemName: "envelope.fill")
@@ -38,6 +41,7 @@ struct SignUpView: View {
                             .disableAutocorrection(true)
                             .keyboardType(.emailAddress)
                     }
+                    //Password text feild
                     HStack
                     {
                         Image(systemName: "lock.fill")
@@ -50,6 +54,31 @@ struct SignUpView: View {
                             .textContentType(.password)
                             .keyboardType(.default)
                     }
+                    //First name text field
+                    HStack
+                    {
+                        Image(systemName: "person.fill")
+                            .foregroundColor(Color.fordsLightYellow)
+                        
+                        SuperTextField(
+                            placeholder: Text("First Name").foregroundColor(Color.fordsLightYellowPlaceholder),
+                            text: $firstName
+                        ).foregroundColor(Color.fordsLightYellow)
+                            .textContentType(.emailAddress)
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .keyboardType(.emailAddress)
+                        
+                        //Last name text Field
+                        SuperTextField(
+                            placeholder: Text("Last Name").foregroundColor(Color.fordsLightYellowPlaceholder),
+                            text: $lastName
+                        ).foregroundColor(Color.fordsLightYellow)
+                            .textContentType(.emailAddress)
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .keyboardType(.emailAddress)
+                    }
                 }.listRowBackground(Color.fordsRed)
                 
                 Section
@@ -58,7 +87,11 @@ struct SignUpView: View {
                     {
                         Spacer()
                         Button( action: {
-                            authModel.signUp( emailAddress: emailAddress, password: password)
+                            authModel.signUp(
+                                emailAddress: emailAddress,
+                                password: password,
+                                firstName: firstName,
+                                lastName: lastName)
                         },
                                 label: {
                             Text("Sign Up")

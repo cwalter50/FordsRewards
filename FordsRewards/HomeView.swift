@@ -12,7 +12,8 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-                    Text("\(authModel.user?.email ?? "")")
+            Text("\(authModel.user?.email ?? "")")
+            Text("\(authModel.user?.uid ?? "")")
         }
     }
 }

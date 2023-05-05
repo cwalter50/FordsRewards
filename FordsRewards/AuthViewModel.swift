@@ -15,7 +15,7 @@ class AuthViewModel: ObservableObject {
     
     @Published var alertBool: Bool = false
     @Published var errorMessage: String = ""
-    @State var signedIn = false
+    @Published var signedIn = false
 
 
     var user: User? {
@@ -36,7 +36,9 @@ class AuthViewModel: ObservableObject {
     
     func signUp(
         emailAddress: String,
-        password: String
+        password: String,
+        firstName: String,
+        lastName: String
     ) {
         Auth.auth().createUser(withEmail: emailAddress, password: password) { result, error in
             if let error = error {
@@ -45,6 +47,10 @@ class AuthViewModel: ObservableObject {
                 print("An Error Occured: \(error.localizedDescription)")
                 return
             }
+            let newUser = UserInfo(firstName: firstName, lastName: lastName, points: 0, email: emailAddress, id: "\(self.user?.uid ?? "")")
+            let firebaseViewModel = FirebaseViewModel()
+            firebaseViewModel.saveUserDataToDatabase(userInfo: newUser)
+            
         }
     }
     

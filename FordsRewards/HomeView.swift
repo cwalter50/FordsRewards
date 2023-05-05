@@ -2,36 +2,24 @@
 //  HomeView.swift
 //  FordsRewards
 //
-//  Created by  on 4/26/23.
+//  Created by Michael Dougherty on 5/3/23.
 //
 
 import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var authModel: AuthViewModel
+    
     var body: some View {
         VStack {
-                    Text("\(authModel.user?.email ?? "")")
+            Text("\(authModel.user?.email ?? "")")
+            Text("\(authModel.user?.uid ?? "")")
         }
-        .toolbar
-                {
-                    ToolbarItemGroup(placement: .navigationBarLeading) { Button(
-                            action: { authModel.signOut()
-                            }, label: {
-                            Text("Sign Out") .bold()
-                        })
-                    }
-                }
-                .navigationTitle("Home")
-        
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            HomeView()
-                .environmentObject(dev.authVM)
-        }
+        HomeView()
     }
 }

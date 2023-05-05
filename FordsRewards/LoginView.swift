@@ -69,7 +69,7 @@ struct LoginView: View {
                 {
                     GoogleSignInButton(action: {
                         print("Hello")
-                    }, signInView: true)
+                    }, signInView: false)
                 }
             }.navigationTitle("Login")
                 .scrollContentBackground(.hidden)

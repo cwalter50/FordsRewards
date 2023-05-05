@@ -10,6 +10,8 @@
 		1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815329F2E1A100C2E819 /* DateHolder.swift */; };
 		1097815629F2E22F00C2E819 /* DateScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815529F2E22F00C2E819 /* DateScrollerView.swift */; };
 		1097815A29F2E59700C2E819 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097815929F2E59700C2E819 /* CalendarHelper.swift */; };
+		10AAB5ED2A02BF0C00C15A0E /* EventScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB5EC2A02BF0C00C15A0E /* EventScheduleView.swift */; };
+		10AAB5F12A040AAC00C15A0E /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB5F02A040AAC00C15A0E /* AddEventView.swift */; };
 		10F67D6A29FC19EC0096FC33 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6929FC19EC0096FC33 /* CalendarCell.swift */; };
 		10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */; };
 		10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */; };
@@ -67,6 +69,8 @@
 		1097815329F2E1A100C2E819 /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
 		1097815529F2E22F00C2E819 /* DateScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollerView.swift; sourceTree = "<group>"; };
 		1097815929F2E59700C2E819 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		10AAB5EC2A02BF0C00C15A0E /* EventScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScheduleView.swift; sourceTree = "<group>"; };
+		10AAB5F02A040AAC00C15A0E /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		10F67D6929FC19EC0096FC33 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
 		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GavinsScheduleView.swift; path = ../../GavinsScheduleView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */,
+				10AAB5EC2A02BF0C00C15A0E /* EventScheduleView.swift */,
+				10AAB5F02A040AAC00C15A0E /* AddEventView.swift */,
 				10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */,
 				1097815929F2E59700C2E819 /* CalendarHelper.swift */,
 				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
@@ -381,7 +387,9 @@
 				2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */,
 				10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */,
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
+				10AAB5F12A040AAC00C15A0E /* AddEventView.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
+				10AAB5ED2A02BF0C00C15A0E /* EventScheduleView.swift in Sources */,
 				4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,
 			);

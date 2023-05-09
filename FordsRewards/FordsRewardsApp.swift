@@ -35,6 +35,9 @@ struct FordsRewardsApp: App {
             ContentView()
         }
       .environmentObject(viewModel)
+      .environmentObject(DateHolder())
+      .environmentObject(FirebaseViewModel())
+      .environmentObject(UserInfo())
 
     }
   }

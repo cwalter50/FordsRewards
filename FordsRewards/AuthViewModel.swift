@@ -41,16 +41,30 @@ class AuthViewModel: ObservableObject {
         lastName: String
     ) {
         Auth.auth().createUser(withEmail: emailAddress, password: password) { result, error in
-            if let error = error {
+            if let err = error
+            {
                 self.alertCheck()
-                self.errorMessage = "\(error.localizedDescription)"
-                print("An Error Occured: \(error.localizedDescription)")
+                self.errorMessage = "\(err.localizedDescription)"
+                print("An Error Occured: \(err.localizedDescription)")
                 return
             }
+            
+//            guard let _ = result?.user else
+//            {
+//                
+//            }
+            
+//            Auth.auth().currentUser?.sendEmailVerification { error in
+//                if let err = error
+//                {
+//                    print("An Error Occured \(err.localizedDescription)")
+//                    return
+//                }
+//            }
+            
             let newUser = UserInfo(firstName: firstName, lastName: lastName, points: 0, email: emailAddress, id: "\(self.user?.uid ?? "")")
             let firebaseViewModel = FirebaseViewModel()
             firebaseViewModel.saveUserDataToDatabase(userInfo: newUser)
-            
         }
     }
     

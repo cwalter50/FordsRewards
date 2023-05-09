@@ -27,6 +27,21 @@ class UserInfo : ObservableObject, Identifiable
         self.created = Date()
     }
     
+    init(snapshot:DocumentSnapshot)
+    {
+//        guard let data = snapshot.data() else {
+//            self.init()
+//            return
+//        }
+        let data = snapshot.data()!
+        self.firstName = data["firstName"] as? String ?? "No First Name Retreived"
+        self.lastName = data["lastName"] as? String ?? "No Last Name Retreived"
+        self.points = data["points"] as? Int ?? 0
+        self.email = data["email"] as? String ?? "No Email Retreived"
+        self.id = data["id"] as? String ?? "No UID Retreived"
+        self.created = (data["created"] as? Timestamp)?.dateValue() ?? Date()
+    }
+    
     func toDictionaryValues() -> [String : Any] {
         return ["id" : self.id, "firstName" : self.firstName, "lastName" : self.lastName, "points" : self.points, "email" : self.email, "created" : self.created]
     }

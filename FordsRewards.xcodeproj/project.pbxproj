@@ -14,6 +14,7 @@
 		10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */; };
 		10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */; };
 		25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */; };
+		25252F722A0AA09D00E64B4B /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 25252F712A0AA09D00E64B4B /* PopupView */; };
 		2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119B29F19A7700B41A95 /* AuthViewModel.swift */; };
 		2571119E29F1A74B00B41A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119D29F1A74B00B41A95 /* MainView.swift */; };
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
@@ -105,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25252F722A0AA09D00E64B4B /* PopupView in Frameworks */,
 				38C6082F29F191F10027A5D1 /* FirebaseAnalytics in Frameworks */,
 				38C6083129F191F10027A5D1 /* FirebaseAuth in Frameworks */,
 				257111B029F6E16100B41A95 /* GoogleSignInSwift in Frameworks */,
@@ -243,6 +245,7 @@
 				38C6083629F191F10027A5D1 /* FirebaseStorage */,
 				257111AD29F6E16100B41A95 /* GoogleSignIn */,
 				257111AF29F6E16100B41A95 /* GoogleSignInSwift */,
+				25252F712A0AA09D00E64B4B /* PopupView */,
 			);
 			productName = FordsRewards;
 			productReference = 38C607FC29F1906D0027A5D1 /* FordsRewards.app */;
@@ -319,6 +322,7 @@
 			packageReferences = (
 				38C6082D29F191F10027A5D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				25252F702A0AA09D00E64B4B /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 38C607FD29F1906D0027A5D1 /* Products */;
 			projectDirPath = "";
@@ -716,6 +720,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		25252F702A0AA09D00E64B4B /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -735,6 +747,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		25252F712A0AA09D00E64B4B /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25252F702A0AA09D00E64B4B /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
 		257111AD29F6E16100B41A95 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 257111AC29F6E16100B41A95 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;

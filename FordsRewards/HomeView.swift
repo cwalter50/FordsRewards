@@ -9,12 +9,33 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var authModel: AuthViewModel
+    @EnvironmentObject private var firebaseVM: FirebaseViewModel
+//    @ObservedObject var userInfo: UserInfo
+//    @State var firstName: String = ""
+//    @State var lastName: String = ""
+//    @State var points: Int = 0
+//    @State var email: String = ""
+//    @State var id: String = ""
+//    @State var created: Date = Date()
     
     var body: some View {
+        
         VStack {
-            Text("\(authModel.user?.email ?? "")")
-            Text("\(authModel.user?.uid ?? "")")
+            List
+            {
+                Text("\(firebaseVM.userInfo.firstName)")
+                Text("\(firebaseVM.userInfo.lastName)")
+                Text("\(firebaseVM.userInfo.points)")
+                Text("\(firebaseVM.userInfo.email)")
+                Text("\(firebaseVM.userInfo.id)")
+                Text("\(firebaseVM.userInfo.created)")
+            }
         }
+        .onAppear(perform: readUser)
+    }
+    func readUser()
+    {
+        firebaseVM.retreiveUserData()
     }
 }
 

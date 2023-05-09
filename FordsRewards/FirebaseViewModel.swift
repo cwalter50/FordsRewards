@@ -10,7 +10,8 @@ import Firebase
 
 class FirebaseViewModel: ObservableObject
 {
-    
+    let db = Firestore.firestore()
+
     func saveUserDataToDatabase(userInfo: UserInfo)
     {
         let db = Firestore.firestore()
@@ -24,5 +25,20 @@ class FirebaseViewModel: ObservableObject
                 print("Succsessfully saved user data to firebase")
             }
         }
+    }
+    
+    
+    func saveEventDataToFirebase(event: EventInfo){
+
+        db.collection("eventInfo").document(event.id).setData(event.toDictionaryValues()) {
+            error in
+            if let err = error {
+                print(err)
+            }
+            else {
+                print("Successfully added event \(event.id)")
+            }
+        }
+        
     }
 }

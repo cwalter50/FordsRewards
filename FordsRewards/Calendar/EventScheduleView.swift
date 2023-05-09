@@ -10,32 +10,34 @@ import SwiftUI
 struct EventScheduleView: View {
     @State var eventName = ""
     @State var description = ""
-
+    
     var body: some View {
-       
+        
         VStack{
             
             HStack{
-            
-                    NavigationLink {
-                        AddEventView()
-                    } label: {
-                        Image(systemName: "plus")
-                            .font(.system(size: 30))
-                            .foregroundColor(.fordsWhite)
-                    }
-                    .padding()
-                Spacer()
+                
+                NavigationLink {
+                    AddEventView()
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.system(size: 30))
+                        .foregroundColor(.fordsWhite)
                 }
-            Spacer()
+                .padding()
+                Spacer()
             }
-    
-                .navigationTitle("Events")                .background(Color.fordsLightRed)
+            Spacer()
+        }
         
+        .navigationTitle("Events")
+        .background(Color.fordsLightRed)
         
+        .toolbar{
+            EditButton()
+            
+        }
     }
-    
-
 }
     struct EventScheduleView_Previews: PreviewProvider {
         static var previews: some View {

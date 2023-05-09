@@ -13,6 +13,7 @@ struct AddEventView: View {
     @State var description = ""
     @State var location = ""
     @State var eventDate : Date = Date()
+    @EnvironmentObject var firebaseVM: FirebaseViewModel
 
     var body: some View {
         ZStack {
@@ -42,8 +43,8 @@ struct AddEventView: View {
                         
                         SuperTextField(
                             placeholder: Text("Location").foregroundColor(Color.fordsLightYellowPlaceholder),
-                            text: $location
-                        ).foregroundColor(Color.fordsLightYellow)
+                            text: $location)
+                        .foregroundColor(Color.fordsLightYellow)
                             .font(.title.bold())
                     }.padding()
                     
@@ -51,8 +52,8 @@ struct AddEventView: View {
                     {
                         SuperTextField(
                             placeholder: Text("Event Desciption").foregroundColor(Color.fordsLightYellowPlaceholder),
-                            text: $description
-                        ).foregroundColor(Color.fordsLightYellow)
+                            text: $description)
+                            .foregroundColor(Color.fordsLightYellow)
                             .font(.title.bold())
                     }.padding()
                 }
@@ -93,6 +94,7 @@ struct AddEventView: View {
         }
         .navigationTitle("Add An Event")
         .background(Color.fordsLightRed)
+        
     }
     
         func saveNewEvent()
@@ -101,17 +103,8 @@ struct AddEventView: View {
     
             let newEvent = EventInfo(name: name, eventDate: eventDate, location: location, description: description, creator: "Gavin", id: id)
              
-            let db = Firestore.firestore()
+            firebaseVM.saveEventDataToFirebase(event: newEvent)
             
-            db.collection("eventInfo").document(id).setData(newEvent.toDictionaryValues()) {
-                error in
-                if let err = error {
-                    print(err)
-                }
-                else {
-                    print("Successfully added event \(id)")
-                }
-            }
             
         }
 }

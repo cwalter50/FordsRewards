@@ -50,6 +50,7 @@ struct MainView_Previews: PreviewProvider {
             MainView()
                 .environmentObject(dev.authVM)
                 .environmentObject(DateHolder())
+                .environmentObject(FirebaseViewModel())
         }
     }
 }

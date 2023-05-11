@@ -29,11 +29,6 @@ struct FordsRewardsApp: App {
       NavigationView {
         ContentView()
       }
-      .environmentObject(AuthViewModel())
-      .environmentObject(DateHolder())
-        NavigationView {
-            ContentView()
-        }
       .environmentObject(viewModel)
       .environmentObject(DateHolder())
       .environmentObject(FirebaseViewModel())

@@ -143,7 +143,6 @@
 		10F67D6F29FC236B0096FC33 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */,
 				10AAB5EC2A02BF0C00C15A0E /* EventScheduleView.swift */,
 				10AAB5F02A040AAC00C15A0E /* AddEventView.swift */,
@@ -186,11 +185,12 @@
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				257111A929F6D29C00B41A95 /* PreviewProvider.swift */,
-				38C6080129F1906D0027A5D1 /* ContentView.swift */,
 				257111B129F6F33800B41A95 /* GoogleSignInButton.swift */,
 				25252F732A0BEB1900E64B4B /* ImagePicker.swift */,
 				10F67D6F29FC236B0096FC33 /* Calendar */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
+				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
 				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
 				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,

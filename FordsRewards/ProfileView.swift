@@ -25,7 +25,7 @@ struct ProfileView: View {
             {
                 HStack
                 {
-                    Image("HF").resizable().scaledToFit().frame(width: 100).clipShape(Circle())
+                    Image("fordslogo").resizable().scaledToFit().frame(width: 100).clipShape(Circle())
                     VStack(alignment: .center)
                     {
                         Text("\(displayname)").multilineTextAlignment(.center).font(.title)

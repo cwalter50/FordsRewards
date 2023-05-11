@@ -13,9 +13,9 @@ struct EventScheduleView: View {
     
     var body: some View {
         
-        VStack{
+        HStack{
             
-            HStack{
+            VStack{
                 
                 NavigationLink {
                     AddEventView()
@@ -29,15 +29,18 @@ struct EventScheduleView: View {
             }
             Spacer()
         }
-        
         .navigationTitle("Events")
         .background(Color.fordsLightRed)
         
         .toolbar{
             EditButton()
             
+            
+            
         }
     }
+    
+    
 }
     struct EventScheduleView_Previews: PreviewProvider {
         static var previews: some View {

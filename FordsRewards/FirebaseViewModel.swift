@@ -57,4 +57,19 @@ class FirebaseViewModel: ObservableObject
             }
             )
     }
+    
+    
+    func saveEventDataToFirebase(event: EventInfo){
+
+        db.collection("eventInfo").document(event.id).setData(event.toDictionaryValues()) {
+            error in
+            if let err = error {
+                print(err)
+            }
+            else {
+                print("Successfully added event \(event.id)")
+            }
+        }
+        
+    }
 }

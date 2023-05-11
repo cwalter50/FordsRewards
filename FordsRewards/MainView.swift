@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject private var authModel: AuthViewModel
+    @EnvironmentObject var dateHolder: DateHolder
+
 
     var body: some View {
         

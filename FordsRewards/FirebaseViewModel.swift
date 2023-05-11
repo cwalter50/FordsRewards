@@ -14,7 +14,7 @@ class FirebaseViewModel: ObservableObject
     @Published var userInfo = UserInfo()
     
     let db = Firestore.firestore()
-    
+
     func saveUserDataToDatabase(userInfo: UserInfo)
     {
 

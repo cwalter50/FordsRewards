@@ -26,6 +26,11 @@ struct FordsRewardsApp: App {
 
   var body: some Scene {
     WindowGroup {
+      NavigationView {
+        ContentView()
+      }
+      .environmentObject(AuthViewModel())
+      .environmentObject(DateHolder())
         NavigationView {
             ContentView()
         }

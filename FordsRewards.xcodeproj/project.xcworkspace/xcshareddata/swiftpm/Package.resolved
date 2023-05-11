@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/openid/AppAuth-iOS.git",
       "state" : {
-        "revision" : "0eadcdec4ddb121865f3d66917549194afce1f2b",
-        "version" : "1.6.1"
+        "revision" : "71cde449f13d453227e687458144bde372d30fc7",
+        "version" : "1.6.2"
       }
     },
     {
@@ -115,15 +115,6 @@
       "state" : {
         "revision" : "819d0a2173aff699fb8c364b6fb906f7cdb1a692",
         "version" : "2.30909.0"
-      }
-    },
-    {
-      "identity" : "popupview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/exyte/PopupView",
-      "state" : {
-        "branch" : "master",
-        "revision" : "5033613ce26797bfdcfae0efedeaebf627f03c23"
       }
     },
     {

@@ -17,6 +17,7 @@
 		10F67D712A0019DD0096FC33 /* GavinsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */; };
 		25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */; };
 		25252F722A0AA09D00E64B4B /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 25252F712A0AA09D00E64B4B /* PopupView */; };
+		25252F742A0BEB1900E64B4B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25252F732A0BEB1900E64B4B /* ImagePicker.swift */; };
 		2571119C29F19A7700B41A95 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119B29F19A7700B41A95 /* AuthViewModel.swift */; };
 		2571119E29F1A74B00B41A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119D29F1A74B00B41A95 /* MainView.swift */; };
 		257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571119F29F1A75D00B41A95 /* SignUpView.swift */; };
@@ -77,6 +78,7 @@
 		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
 		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GavinsScheduleView.swift; path = ../../GavinsScheduleView.swift; sourceTree = "<group>"; };
 		25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
+		25252F732A0BEB1900E64B4B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2571119B29F19A7700B41A95 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2571119D29F1A74B00B41A95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2571119F29F1A75D00B41A95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -183,11 +185,12 @@
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
 				38C607FF29F1906D0027A5D1 /* FordsRewardsApp.swift */,
 				257111A929F6D29C00B41A95 /* PreviewProvider.swift */,
-				38C6080129F1906D0027A5D1 /* ContentView.swift */,
-				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				257111B129F6F33800B41A95 /* GoogleSignInButton.swift */,
+				25252F732A0BEB1900E64B4B /* ImagePicker.swift */,
 				10F67D6F29FC236B0096FC33 /* Calendar */,
 				2571119F29F1A75D00B41A95 /* SignUpView.swift */,
+				38C6080129F1906D0027A5D1 /* ContentView.swift */,
+				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
 				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
 				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
@@ -397,6 +400,7 @@
 				257111AA29F6D29C00B41A95 /* PreviewProvider.swift in Sources */,
 				10AAB5F12A040AAC00C15A0E /* AddEventView.swift in Sources */,
 				C905EFA229FC1ED1006E800D /* UserInfo.swift in Sources */,
+				25252F742A0BEB1900E64B4B /* ImagePicker.swift in Sources */,
 				10AAB5ED2A02BF0C00C15A0E /* EventScheduleView.swift in Sources */,
 				4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,

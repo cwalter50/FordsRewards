@@ -17,9 +17,17 @@ import SwiftUI
 struct EditProfileView: View {
     @Binding var displaynamereference: String
     @Binding var bioreference: String
+    @State var shouldShowImagePicker: Bool = false
     var body: some View {
         VStack
         {
+            Button {
+                shouldShowImagePicker.toggle()
+            } label: {
+                Image(systemName: "person.fill")
+                    .font(.system(size: 64))
+            }
+
             HStack
             {
                 Text("Change Display Name: ")

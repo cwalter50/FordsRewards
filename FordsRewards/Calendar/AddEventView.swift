@@ -74,7 +74,7 @@ struct AddEventView: View {
                 
                 Button {
                     
-                    saveNewEvent()
+//                    saveNewEvent()
                 } label: {
                     
                     Text("Add Event")
@@ -97,16 +97,16 @@ struct AddEventView: View {
         
     }
     
-        func saveNewEvent()
-        {
-            let id = UUID().uuidString
-    
-            let newEvent = EventInfo(name: name, eventDate: eventDate, location: location, description: description, creator: "Gavin", id: id)
-             
-            firebaseVM.saveEventDataToFirebase(event: newEvent)
-            
-            
-        }
+//        func saveNewEvent()
+//        {
+//            let id = UUID().uuidString
+//
+//            let newEvent = EventInfo(name: name, eventDate: eventDate, location: location, description: description, creator: "Gavin", id: id)
+//
+//            firebaseVM.saveEventDataToFirebase(event: newEvent)
+//
+//
+//        }
 }
     
     struct AddEventView_Previews: PreviewProvider {

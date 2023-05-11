@@ -27,13 +27,8 @@ class UserInfo : ObservableObject, Identifiable
         self.created = Date()
     }
     
-    init(snapshot:DocumentSnapshot)
+    init(data:[String: Any])
     {
-//        guard let data = snapshot.data() else {
-//            self.init()
-//            return
-//        }
-        let data = snapshot.data()!
         self.firstName = data["firstName"] as? String ?? "No First Name Retreived"
         self.lastName = data["lastName"] as? String ?? "No Last Name Retreived"
         self.points = data["points"] as? Int ?? 0

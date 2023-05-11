@@ -38,23 +38,21 @@ class FirebaseViewModel: ObservableObject
             return
         }
         
-        db.collection("userInfo").document("\(user.uid)")
-            .getDocument(completion:
-                            { (snapshot, error) in
-                if let err = error
+        db.collection("userInfo").document("\(user.uid)").getDocument { snapshot, error in
+            if let err = error
+            {
+                print(err)
+            }else
+            {
+                if let snap = snapshot
                 {
-                    print(err)
-                }else
-                {
-                    if let snap = snapshot
-                    {
-                        self.userInfo = UserInfo(snapshot: snap)
-                                                
-                        //print("\(firstName) \(lastName) \(points) \(email) \(id) \(created)")
+                    if let data = snap.data(){
+                        self.userInfo = UserInfo(data: data)
                     }
-                    return
                 }
+                return
             }
-            )
+        }
+       
     }
 }

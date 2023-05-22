@@ -30,14 +30,6 @@ struct MainView: View {
                 Label("Profile", systemImage: "person.fill")
             }
             
-        }.toolbar
-        {
-            ToolbarItemGroup(placement: .navigationBarLeading) { Button(
-                    action: { authModel.signOut()
-                    }, label: {
-                    Text("Sign Out") .bold()
-                })
-            }
         }
         .navigationTitle("Home")
         

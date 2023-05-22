@@ -15,6 +15,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject private var authModel: AuthViewModel
     @State var displayname = ""
     @State var bio: String = ""
     @State var points: Int = 0
@@ -38,6 +39,14 @@ struct ProfileView: View {
                 {
                     EditProfileView(displaynamereference: $displayname, bioreference: $bio)
                 }.background(.blue).bold().foregroundColor(.white)
+            }.toolbar
+            {
+                ToolbarItemGroup(placement: .navigationBarLeading) { Button(
+                        action: { authModel.signOut()
+                        }, label: {
+                        Text("Sign Out") .bold()
+                    })
+                }
             }
         }
     }

@@ -49,7 +49,9 @@ struct ContentView: View {
         VStack {
             Group {
                 if authModel.user != nil || authModel.signedIn{
-                MainView()
+                    NavigationView {
+                        MainView()
+                    }
             } else {
                 LoginView()
                     .environmentObject(AuthViewModel())
@@ -66,5 +68,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(DateHolder())
             .environmentObject(dev.authVM)
+            .environmentObject(FirebaseViewModel())
     }
 }

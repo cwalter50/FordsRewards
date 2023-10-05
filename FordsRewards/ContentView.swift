@@ -19,6 +19,7 @@ struct SuperTextField: View {
             if text.isEmpty { placeholder }
             TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
         }
+        
     }
 }
 

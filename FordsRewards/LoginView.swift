@@ -34,6 +34,7 @@ struct LoginView: View {
                             .disableAutocorrection(true)
                             .keyboardType(.emailAddress)
                     }
+                    
                     HStack
                     {
                         Image(systemName: "lock.fill")
@@ -71,20 +72,33 @@ struct LoginView: View {
                     GoogleSignInButton(action: {
                         print("Hello")
                     }, signInView: false)
-                }
-            }.navigationTitle("Login")
+                }.listRowBackground(Color.fordsRed)
+                
+                Section
+                {
+                    ZStack {
+                        NavigationLink (destination:
+                            SignUpView()
+                        ) {
+                            HStack {
+                                Text("Not a Member Yet? Sign Up!")
+                                    .bold()
+                            }
+                        }.opacity(0)
+                        
+                        HStack {
+                            Text("Not a Member Yet? Sign Up!")
+                                .bold()
+                        }.textColor(.fordsGold)
+                    }
+                }.listRowBackground(Color.fordsRed).buttonStyle(PlainButtonStyle())
+            }.navigationTitle(Text("Login").textColor(.fordsGold))
                 .scrollContentBackground(.hidden)
-                .background(Color.fordsLightRed)
                 .shadow(color: Color.fordsSelectedButtonRed, radius: 2.5, x: 5, y: 5)
                 .alert(isPresented: $authModel.alertBool) {
                     Alert(title: Text("An Error Occured"), message: Text(authModel.errorMessage), dismissButton: .default(Text("Got it!")))
                 }
-            NavigationLink {
-                SignUpView()
-            } label: {
-                Text("Not a Member Yet? Sign Up!")
-            }
-        }
+        }.background(Color.fordsLightRed)
     }
 }
 

@@ -51,6 +51,9 @@
 		DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84029F6D8CF00FA848E /* ProfileView.swift */; };
 		DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84229F6D8E600FA848E /* EditProfileView.swift */; };
 		E7049C472AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C462AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift */; };
+		E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C482AD8618000DFFBA9 /* Addevents.swift */; };
+		E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */; };
+		E7049C4D2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		DEF6E84029F6D8CF00FA848E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DEF6E84229F6D8E600FA848E /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E7049C462AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedTextFeatures.swift; sourceTree = "<group>"; };
+		E7049C482AD8618000DFFBA9 /* Addevents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addevents.swift; sourceTree = "<group>"; };
+		E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewmodel.swift; sourceTree = "<group>"; };
+		E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorPlusPlus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 				257111AB29F6DE8000B41A95 /* Info.plist */,
 				2571119B29F19A7700B41A95 /* AuthViewModel.swift */,
 				25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */,
+				E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */,
 				E7049C452AD719B800DFFBA9 /* Extensions */,
 				C905EFA129FC1ED1006E800D /* UserInfo.swift */,
 				C905EFA329FC2131006E800D /* EventInfo.swift */,
@@ -197,6 +204,7 @@
 				38C6080129F1906D0027A5D1 /* ContentView.swift */,
 				4D58D3532A016B81002F2243 /* QRcodeView.swift */,
 				257111A529F2FFF500B41A95 /* LoginView.swift */,
+				E7049C482AD8618000DFFBA9 /* Addevents.swift */,
 				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
 				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
@@ -239,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				E7049C462AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift */,
+				E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -399,13 +408,16 @@
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				257111BA2A02B89900B41A95 /* HomeView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
+				E7049C4D2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift in Sources */,
 				25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */,
+				E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */,
 				4D92370829F83346008E4F82 /* EventView.swift in Sources */,
 				DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */,
 				257111B229F6F33800B41A95 /* GoogleSignInButton.swift in Sources */,
 				257111A629F2FFF500B41A95 /* LoginView.swift in Sources */,
 				257111A029F1A75D00B41A95 /* SignUpView.swift in Sources */,
 				E7049C472AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift in Sources */,
+				E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,
 				1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */,

@@ -92,7 +92,7 @@ struct LoginView: View {
                         }.textColor(.fordsGold)
                     }
                 }.listRowBackground(Color.fordsRed).buttonStyle(PlainButtonStyle())
-            }.navigationTitle(Text("Login").textColor(.fordsGold))
+            }.navigationTitle("Login")
                 .scrollContentBackground(.hidden)
                 .shadow(color: Color.fordsSelectedButtonRed, radius: 2.5, x: 5, y: 5)
                 .alert(isPresented: $authModel.alertBool) {

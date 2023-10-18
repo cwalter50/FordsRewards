@@ -49,16 +49,16 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Group {
-                if authModel.user != nil || authModel.signedIn{
-                    NavigationView {
+                NavigationView {
+                    if authModel.user != nil || authModel.signedIn{
                         MainView()
+                    } else {
+                        LoginView()
+                            .environmentObject(AuthViewModel())
                     }
-            } else {
-                LoginView()
-                    .environmentObject(AuthViewModel())
-            }
-            }.onAppear {
-            authModel.listenToAuthState()
+                }.onAppear {
+                    authModel.listenToAuthState()
+                }
             }
         }
     }

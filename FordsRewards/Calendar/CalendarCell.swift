@@ -10,46 +10,62 @@ import SwiftUI
 struct CalendarCell: View
 {
     @EnvironmentObject var dateHolder: DateHolder
-    let count : Int
-    let startingSpaces : Int
-    let daysInMonth : Int
-    let daysInPrevMonth : Int
-    
+    var month: MonthStruct
+    var event: (CellLogView)? = nil
     
     var body: some View
     {
-        
-        Text(monthStruct().day())
-            .foregroundColor(textColor(type: monthStruct().monthType))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        if let forEvent = event {
+            if isCurrentMonth(type: month.monthType){
+                NavigationLink(destination: forEvent) {
+                    Circle()
+                        .fill(Color.fordsGold)
+                        .scaleEffect(0.75)
+                        .overlay {
+                        Text(month.day())
+                            .foregroundColor(colorText(type: month.monthType))
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                }
+            } else {
+                Circle()
+                    .fill(circleColor(type: month.monthType))
+                    .scaleEffect(0.75)
+                    .overlay {
+                    Text(month.day())
+                        .foregroundColor(colorText(type: month.monthType))
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+            }
+        } else {
+            Text(month.day())
+                .foregroundColor(colorText(type: month.monthType))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
      
     }
-    func textColor(type: MonthType) -> Color
+    
+    /// set the text color according to its `MonthType`
+    func colorText(type: MonthType) -> Color
     {
         return type == MonthType.Current ? Color.black : Color.gray
     }
     
-    func monthStruct() -> MonthStruct
+    /// checks if its the current month
+    func isCurrentMonth(type: MonthType) -> Bool
     {
-        let start = startingSpaces == 0 ? startingSpaces + 7 : startingSpaces
-        if(count <= start)
-        {
-            let day = daysInPrevMonth + count - start
-            return MonthStruct(monthType: MonthType.Previous, dayInt: day)
-        }
-        else if (count - start > daysInMonth)
-        {
-            let day = count - start - daysInMonth
-            return MonthStruct(monthType: MonthType.Next, dayInt: day)
-        }
-      
-        let day = count - start
-        return MonthStruct(monthType: MonthType.Current, dayInt: day)
+        return type == MonthType.Current
     }
+    
+    /// set the circle color
+    func circleColor(type: MonthType) -> Color {
+        return type == MonthType.Current ? Color.fordsGold : Color.gray.opacity(0.25)
+    }
+    
 }
 
 struct CalendarCell_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarCell(count: 1, startingSpaces: 1, daysInMonth: 1, daysInPrevMonth: 1)
+        CalendarCell(month: MonthStruct(count: 2, startingSpaces: 1, daysInMonth: 31, daysInPrevMonth: 31), event: CellLogView(month: MonthStruct(count: 1, startingSpaces: 1, daysInMonth: 1, daysInPrevMonth: 1)))
     }
 }

@@ -12,7 +12,7 @@ extension Text {
     /// Handles setting text color, despite version discrepencies.
     func textColor(_ color: Color) -> Text {
         if #available(iOS 17, *) {
-            return self.foregroundStyle(color)
+            return self.foregroundStyle(color) as! Text 
         } else {
             return self.foregroundColor(color)
         }

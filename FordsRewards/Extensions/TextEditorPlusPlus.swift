@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+/// A wrapper for `TextEditor` that allows for an (albeit somewhat janky) placeholder to be
+/// put above the field when empty.
+///
+/// notes:
+/// - yes, the text does have to disappear when you click it. otherwise, it renders above and to the left of the cursor.
 struct TextEditorPlusPlus: View {
     var text: Binding<String>
     
@@ -33,6 +38,8 @@ struct TextEditorPlusPlus: View {
     }
 }
 
-#Preview {
-    TextEditorPlusPlus(text: .constant(""), placeholder: "what")
+struct TextEditorPlusPlus_Previews: PreviewProvider {
+    static var previews: some View {
+        TextEditorPlusPlus(text: .constant(""), placeholder: "testing")
+    }
 }

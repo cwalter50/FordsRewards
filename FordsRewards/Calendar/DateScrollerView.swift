@@ -15,11 +15,8 @@ struct DateScrollerView: View
     {
         
         VStack {
-            
-            
             HStack{
                 Spacer()
-
 
                 Button(action: previousMonth)
                 {
@@ -28,11 +25,14 @@ struct DateScrollerView: View
                         .font(Font.title.weight(.bold))
                 }
                 
-                Text(CalendarHelper().monthYearString(dateHolder.date))
-                    .font(.title)
-                    .bold()
-                    .animation(.none)
-                    .frame(maxWidth: .infinity)
+                Button(action: resetMonth)
+                {
+                    Text(CalendarHelper.monthYearString(dateHolder.date))
+                        .font(.title)
+                        .bold()
+                        .animation(.none)
+                        .frame(maxWidth: .infinity)
+                }.foregroundColor(.primary)
 
                 Button(action: nextMonth)
                 {
@@ -47,14 +47,22 @@ struct DateScrollerView: View
         
     }
     
+    /// move back one month
     func previousMonth()
     {
-        dateHolder.date = CalendarHelper().minusMonth(dateHolder.date)
+        dateHolder.date = CalendarHelper.minusMonth(dateHolder.date)
     }
     
+    /// reset the month back to the current month
+    func resetMonth()
+    {
+        dateHolder.date = Date();
+    }
+    
+    /// move forward one month
     func nextMonth()
     {
-        dateHolder.date = CalendarHelper().plusMonth(dateHolder.date)
+        dateHolder.date = CalendarHelper.plusMonth(dateHolder.date)
     }
     
     

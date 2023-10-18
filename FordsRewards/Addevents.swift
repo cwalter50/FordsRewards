@@ -141,6 +141,8 @@ struct Addevents: View
     }
 
 
-#Preview {
-    Addevents()
+struct Addevents_Previews: PreviewProvider {
+    static var previews: some View {
+        Addevents()
+    }
 }

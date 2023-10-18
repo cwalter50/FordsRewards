@@ -54,6 +54,7 @@
 		E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C482AD8618000DFFBA9 /* Addevents.swift */; };
 		E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */; };
 		E7049C4D2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */; };
+		F8DEF78F2AD9BA0500A20C89 /* mw_CellLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		E7049C482AD8618000DFFBA9 /* Addevents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addevents.swift; sourceTree = "<group>"; };
 		E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewmodel.swift; sourceTree = "<group>"; };
 		E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorPlusPlus.swift; sourceTree = "<group>"; };
+		F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mw_CellLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				1097815529F2E22F00C2E819 /* DateScrollerView.swift */,
 				1097815329F2E1A100C2E819 /* DateHolder.swift */,
 				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
+				F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				E7049C472AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift in Sources */,
 				E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */,
 				2571119E29F1A74B00B41A95 /* MainView.swift in Sources */,
+				F8DEF78F2AD9BA0500A20C89 /* mw_CellLogView.swift in Sources */,
 				38C6080029F1906D0027A5D1 /* FordsRewardsApp.swift in Sources */,
 				1097815429F2E1A100C2E819 /* DateHolder.swift in Sources */,
 				10F67D6C29FC1B8A0096FC33 /* MonthStruct.swift in Sources */,

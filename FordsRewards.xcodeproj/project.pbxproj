@@ -84,7 +84,7 @@
 		10AAB5F02A040AAC00C15A0E /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		10F67D6929FC19EC0096FC33 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		10F67D6B29FC1B8A0096FC33 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
-		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GavinsScheduleView.swift; path = ../../GavinsScheduleView.swift; sourceTree = "<group>"; };
+		10F67D702A0019DD0096FC33 /* GavinsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GavinsScheduleView.swift; sourceTree = "<group>"; };
 		25252F6E2A0400EA00E64B4B /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		25252F732A0BEB1900E64B4B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2571119B29F19A7700B41A95 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };

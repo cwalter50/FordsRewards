@@ -12,6 +12,8 @@ struct GavinsScheduleView: View
 {
     @EnvironmentObject var dateHolder: DateHolder
     
+    @Binding var title: String
+    
     /// DO NOT BE FOOLED
     /// -- this is what is drawn, not just `calendarGrid`
     var body: some View
@@ -23,6 +25,8 @@ struct GavinsScheduleView: View
             dayOfWeekStack // defined below
             
             calendarGrid // defined below
+        }.onAppear {
+            title = "Calendar"
         }
     }
     
@@ -86,7 +90,7 @@ struct GavinsScheduleView: View
     
 struct GavinsScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        GavinsScheduleView()
+        GavinsScheduleView(title: .constant("mmnnnggt"))
             .environmentObject(DateHolder())
     }
 }

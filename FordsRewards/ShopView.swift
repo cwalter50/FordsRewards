@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ShopView: View {
+    @Binding var title: String
     var body: some View {
         VStack{
             
+        }.onAppear{
+            title = "Shop"
         }
     }
 }
 
 #Preview {
-    ShopView()
+    ShopView(title: .constant("weorbf"))
 }

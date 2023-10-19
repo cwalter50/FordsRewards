@@ -12,6 +12,8 @@ struct GavinsScheduleView: View
 {
     @EnvironmentObject var dateHolder: DateHolder
     
+    @Binding var title: String
+    
     /// DO NOT BE FOOLED
     /// -- this is what is drawn, not just `calendarGrid`
     var body: some View
@@ -23,6 +25,8 @@ struct GavinsScheduleView: View
             dayOfWeekStack // defined below
             
             calendarGrid // defined below
+        }.onAppear {
+            title = "Calendar"
         }
     }
     
@@ -66,14 +70,7 @@ struct GavinsScheduleView: View
                         let count = column + (row * 7)
                         let mth = MonthStruct(count: count, startingSpaces: startingSpaces, daysInMonth: daysInMonth, daysInPrevMonth: daysInPrevMonth);
                         
-//                        if count % 3 == 0 {
-//                            CalendarCell(month: mth, event: CellLogView(month: mth, date: dateHolder.date))
-//                                .environmentObject(dateHolder)
-//                        } else {
-//
-//                            CalendarCell(month: MonthStruct(count: count, startingSpaces: startingSpaces, daysInMonth: daysInMonth, daysInPrevMonth: daysInPrevMonth))
-//                                .environmentObject(dateHolder)
-//                        }
+                        CalendarCell(month: mth)
                         
                     }
                 }
@@ -86,7 +83,7 @@ struct GavinsScheduleView: View
     
 struct GavinsScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        GavinsScheduleView()
+        GavinsScheduleView(title: .constant(""))
             .environmentObject(DateHolder())
     }
 }

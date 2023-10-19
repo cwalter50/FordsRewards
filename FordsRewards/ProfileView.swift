@@ -20,6 +20,7 @@ struct ProfileView: View {
     @StateObject var Viewmodel = FirebaseViewModel()
     @State var bio: String = ""
     @State var points: Int = 0
+    @Binding var title: String
     var body: some View {
         NavigationView
         {
@@ -36,6 +37,7 @@ struct ProfileView: View {
                     }
                     .onAppear {
                         Viewmodel.retreiveUserData()
+                        title = "Profile"
                     }
                 NavigationLink("Edit Profile")
                 {
@@ -55,7 +57,7 @@ struct ProfileView: View {
 }
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(title: .constant("ihjoieufh"))
     }
 }
 

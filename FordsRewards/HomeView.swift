@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var authModel: AuthViewModel
     @EnvironmentObject private var firebaseVM: FirebaseViewModel
+    
+    @Binding var title: String
 //    @ObservedObject var userInfo: UserInfo
 //    @State var firstName: String = ""
 //    @State var lastName: String = ""
@@ -31,7 +33,10 @@ struct HomeView: View {
                 Text("\(firebaseVM.userInfo.created)")
             }
         }
-        .onAppear(perform: readUser)
+        .onAppear {
+            readUser()
+            title = "Home"
+        }
     }
     func readUser()
     {
@@ -41,6 +46,8 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(title: .constant("Home"))
+            .environmentObject(dev.authVM)
+            .environmentObject(FirebaseViewModel())
     }
 }

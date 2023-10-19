@@ -43,7 +43,9 @@ struct ContentView: View {
     @AppStorage("signIn") var isSignIn = false
     
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color.fordsGold)]
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor.init(Color.fordsGold),
+        ]
     }
     
     var body: some View {

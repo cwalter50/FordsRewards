@@ -10,33 +10,35 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject private var authModel: AuthViewModel
     @EnvironmentObject var dateHolder: DateHolder
-
+    @State var title = ""
 
     var body: some View {
         
         TabView{
-            HomeView()
+            HomeView(title: $title)
                 .tabItem{
                 Label("Home", systemImage: "house.fill")
             }
             
-            GavinsScheduleView()
+            GavinsScheduleView(title: $title)
                 .tabItem{
                 Label("Schedule", systemImage: "calendar")
             }
         
-            ProfileView()
+            ProfileView(title: $title)
                 .tabItem{
                 Label("Profile", systemImage: "person.fill")
             }
             
-            ShopView()
+            ShopView(title: $title)
                 .tabItem{
                 Label("Shop", systemImage: "cart.circle")
                 }
             
         }
-        .navigationTitle("Home")
+        
+        .navigationTitle("\(title)")
+        .navigationBarTitleDisplayMode(.inline)
         
     }
 }

@@ -17,6 +17,7 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject private var authModel: AuthViewModel
     @State var displayname = ""
+    @StateObject var Viewmodel = FirebaseViewModel()
     @State var bio: String = ""
     @State var points: Int = 0
     var body: some View {
@@ -24,21 +25,22 @@ struct ProfileView: View {
         {
             VStack
             {
-                HStack
-                {
                     Image("fordslogo").resizable().scaledToFit().frame(width: 100).clipShape(Circle())
                     VStack(alignment: .center)
                     {
-                        Text("\(displayname)").multilineTextAlignment(.center).font(.title)
+                        
+                        Text("\(Viewmodel.userInfo.firstName) \(Viewmodel.userInfo.lastName)").multilineTextAlignment(.center).font(.title)
                         Text("Points: \(points)")
-                        Text("\(bio)").multilineTextAlignment(.center).italic()
+                        
                         
                     }
-                }
+                    .onAppear {
+                        Viewmodel.retreiveUserData()
+                    }
                 NavigationLink("Edit Profile")
                 {
                     EditProfileView(displaynamereference: $displayname, bioreference: $bio)
-                }.background(.blue).bold().foregroundColor(.white)
+                }.foregroundColor(.fordsGold)
             }.toolbar
             {
                 ToolbarItemGroup(placement: .navigationBarLeading) { Button(

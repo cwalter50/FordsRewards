@@ -50,6 +50,7 @@
 		C905EFA429FC2131006E800D /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905EFA329FC2131006E800D /* EventInfo.swift */; };
 		DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84029F6D8CF00FA848E /* ProfileView.swift */; };
 		DEF6E84329F6D8E600FA848E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E84229F6D8E600FA848E /* EditProfileView.swift */; };
+		E701062F2AE199CA005E487F /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E701062E2AE199CA005E487F /* ShopView.swift */; };
 		E7049C472AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C462AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift */; };
 		E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C482AD8618000DFFBA9 /* Addevents.swift */; };
 		E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */; };
@@ -111,6 +112,7 @@
 		C905EFA329FC2131006E800D /* EventInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
 		DEF6E84029F6D8CF00FA848E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DEF6E84229F6D8E600FA848E /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E701062E2AE199CA005E487F /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		E7049C462AD719DA00DFFBA9 /* DeprecatedTextFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedTextFeatures.swift; sourceTree = "<group>"; };
 		E7049C482AD8618000DFFBA9 /* Addevents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addevents.swift; sourceTree = "<group>"; };
 		E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewmodel.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				DEF6E84029F6D8CF00FA848E /* ProfileView.swift */,
 				DEF6E84229F6D8E600FA848E /* EditProfileView.swift */,
 				2571119D29F1A74B00B41A95 /* MainView.swift */,
+				E701062E2AE199CA005E487F /* ShopView.swift */,
 				257111B92A02B89900B41A95 /* HomeView.swift */,
 				4D92370729F83346008E4F82 /* EventView.swift */,
 				38C6080329F1906F0027A5D1 /* Assets.xcassets */,
@@ -434,6 +437,7 @@
 				25252F742A0BEB1900E64B4B /* ImagePicker.swift in Sources */,
 				10AAB5ED2A02BF0C00C15A0E /* EventScheduleView.swift in Sources */,
 				4D58D3542A016B81002F2243 /* QRcodeView.swift in Sources */,
+				E701062F2AE199CA005E487F /* ShopView.swift in Sources */,
 				4D92370029F2E71E008E4F82 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

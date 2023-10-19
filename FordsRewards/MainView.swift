@@ -30,6 +30,11 @@ struct MainView: View {
                 Label("Profile", systemImage: "person.fill")
             }
             
+            ShopView()
+                .tabItem{
+                Label("Shop", systemImage: "cart.circle")
+                }
+            
         }
         .navigationTitle("Home")
         

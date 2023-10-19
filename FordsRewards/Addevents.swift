@@ -60,40 +60,12 @@ struct Addevents: View
                         .tint(.fordsYellow)
                         .textColor(Color.fordsGold)
                         .textFieldStyle(.plain)
+                        
                     }
-                    
-//                    Section
-//                    {
-//                        TextField(
-//                            "EventDescription",
-//                            text: $eventDescription,
-//                            prompt: Text("Event Description"),
-//                            axis: .vertical
-//                        )
-//                        .tint(.fordsYellow)
-//                        .textColor(Color.fordsGold)
-//                        .textFieldStyle(.plain)
-//                    }
                     
                     Section 
                     {
-//                            TextEditor(text: $eventDescription)
-//                            .overlay {
-//                                if eventDescription.count == 0  && !focused {
-//                                    HStack{
-//                                        Button {
-//                                            focused = true
-//                                        } label: {
-//                                            Text("Event Description")
-//                                                .opacity(0.25)
-//                                                .textColor(.primary)
-//                                        }
-//                                        Spacer()
-//                                    }
-//                                }
-//                            }.focused($focused)
-                        
-                        TextEditorPlusPlus(text: $eventName, placeholder: "Event Description")
+                        TextEditorPlusPlus(text: $eventDescription, placeholder: "Event Description")
                     }
                     
                     let adde = EventInfo(name: eventName, eventDate: viewModel.date, location: eventLocation, description: eventDescription, creator: viewModel.currentUser.firstName+" "+viewModel.currentUser.lastName, id: (UUID().uuidString))

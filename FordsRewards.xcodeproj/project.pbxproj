@@ -55,6 +55,7 @@
 		E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C482AD8618000DFFBA9 /* Addevents.swift */; };
 		E7049C4B2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */; };
 		E7049C4D2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */; };
+		F853F7B52AE053D90053D6AA /* SheduleServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853F7B42AE053D90053D6AA /* SheduleServerService.swift */; };
 		F8DEF78F2AD9BA0500A20C89 /* mw_CellLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		E7049C482AD8618000DFFBA9 /* Addevents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addevents.swift; sourceTree = "<group>"; };
 		E7049C4A2AD9B9AE00DFFBA9 /* AddEventViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewmodel.swift; sourceTree = "<group>"; };
 		E7049C4C2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorPlusPlus.swift; sourceTree = "<group>"; };
+		F853F7B42AE053D90053D6AA /* SheduleServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduleServerService.swift; sourceTree = "<group>"; };
 		F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mw_CellLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 				1097815329F2E1A100C2E819 /* DateHolder.swift */,
 				10F67D6929FC19EC0096FC33 /* CalendarCell.swift */,
 				F8DEF78E2AD9BA0500A20C89 /* mw_CellLogView.swift */,
+				F853F7B42AE053D90053D6AA /* SheduleServerService.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				38C6080229F1906D0027A5D1 /* ContentView.swift in Sources */,
 				257111BA2A02B89900B41A95 /* HomeView.swift in Sources */,
 				DEF6E84129F6D8CF00FA848E /* ProfileView.swift in Sources */,
+				F853F7B52AE053D90053D6AA /* SheduleServerService.swift in Sources */,
 				E7049C4D2ADEFF2400DFFBA9 /* TextEditorPlusPlus.swift in Sources */,
 				25252F6F2A0400EA00E64B4B /* FirebaseViewModel.swift in Sources */,
 				E7049C492AD8618000DFFBA9 /* Addevents.swift in Sources */,

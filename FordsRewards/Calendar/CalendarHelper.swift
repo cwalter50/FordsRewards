@@ -7,9 +7,13 @@
 
 import Foundation
 
+/// a lot, and i mean a LOT of helper functions for working with dates
+///
+/// notes:
+/// - most of the stuff relating to `GavinsScheduleView` implements these functions in some way
 class CalendarHelper
 {
-    /// current time or something...? unsure document later
+    /// calendar object. used to mutilate dates.
     static let calendar = Calendar.current
     
     /// format the date
@@ -20,6 +24,19 @@ class CalendarHelper
     {
         dateFormatter.dateFormat = "LLL yyyy"
         return dateFormatter.string(from: date)
+    }
+    
+    /// converts a function to month, day, and year (in that order)
+    ///
+    /// notes:
+    /// - `MonthStruct.dateOf(...)` does NOT rely on this, it implements it itself
+    /// - might want to fix that later idk
+    static func toMDY(_ date: Date) -> (Int, Int, Int) {
+        let m = calendar.component(.month, from: date)
+        let d = calendar.component(.day, from: date)
+        let y = calendar.component(.year, from: date)
+        
+        return (m, d, y)
     }
     
     /// add one month
@@ -56,6 +73,10 @@ class CalendarHelper
     }
     
     /// get the day of the week
+    ///
+    /// notes:
+    /// - not entirely sure why but it subtracts 1 from the weekday before returning
+    /// - ACTUALLY WAIT THAT MIGHT BE TO OFFSET IT BC THE CALENDAR GOES FROM SUN-SAT OHHHHHH
     static func weekDay(_ date: Date) -> Int
     {
         let components = calendar.dateComponents([.weekday], from: date)

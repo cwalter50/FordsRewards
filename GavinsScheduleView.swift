@@ -66,14 +66,14 @@ struct GavinsScheduleView: View
                         let count = column + (row * 7)
                         let mth = MonthStruct(count: count, startingSpaces: startingSpaces, daysInMonth: daysInMonth, daysInPrevMonth: daysInPrevMonth);
                         
-                        if count % 3 == 0 {
-                            CalendarCell(month: mth, event: CellLogView(month: mth, date: dateHolder.date))
-                                .environmentObject(dateHolder)
-                        } else {
-                        
-                            CalendarCell(month: MonthStruct(count: count, startingSpaces: startingSpaces, daysInMonth: daysInMonth, daysInPrevMonth: daysInPrevMonth))
-                                .environmentObject(dateHolder)
-                        }
+//                        if count % 3 == 0 {
+//                            CalendarCell(month: mth, event: CellLogView(month: mth, date: dateHolder.date))
+//                                .environmentObject(dateHolder)
+//                        } else {
+//
+//                            CalendarCell(month: MonthStruct(count: count, startingSpaces: startingSpaces, daysInMonth: daysInMonth, daysInPrevMonth: daysInPrevMonth))
+//                                .environmentObject(dateHolder)
+//                        }
                         
                     }
                 }

@@ -30,6 +30,16 @@ class EventInfo : ObservableObject, Identifiable
         self.id = id
     }
     
+    init(data: [String: Any]) {
+        self.name = data["name"] as? String ?? "FAILURE//NAME"
+        self.eventDate = data["name"] as? Date ?? Date()
+        self.location = data["location"] as? String ?? "FAILURE//LOCATION"
+        self.description = data["description"] as? String ?? "FAILURE//DESCRIPTION"
+        self.creator = data["creator"] as? String ?? "FAILURE//CREATOR"
+        self.created = data["created"] as? Date ?? Date()
+        self.id = data["id"] as? String ?? "FAILURE//ID"
+    }
+    
     func toDictionaryValues() -> [String : Any] {
         return ["name" : self.name, "eventDate" : self.eventDate, "location" : self.location, "description" : self.description, "creator" : self.creator, "created" : self.created, "id" : self.id]
     }
